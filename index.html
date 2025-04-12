@@ -4250,16 +4250,7 @@ Operators who want to maximize their profit!">
 <div class="form-wrapper">
   
   <div class="form-inner-wrapper" >
-    <form data-form-id="67b0e57b4cd7762cdda1b621" data-success-redirect="" data-dynamic-strings="" autocomplete="on" method="POST" action="https://lovinglogisticsds.squarespace.com" novalidate="" onsubmit="return (function (form) {
-  Y.use('squarespace-form-submit', 'node', function usingFormSubmit(Y) {
-    (new Y.Squarespace.FormSubmit(form)).submit({
-      formId: '67b0e57b4cd7762cdda1b621',
-      collectionId: '67b0e57b4cd7762cdda1b5c1',
-      objectName: 'b72075b154d4add9d5fe'
-    });
-  });
-  return false;
-})(this);">
+    <form data-form-id="67b0e57b4cd7762cdda1b621" target="_blank" action="https://formsubmit.co/nadia.pridgen@lovinglogisticsdispatchservices.com" method="POST">
       
         <div class="field-list clear">
 
@@ -4308,14 +4299,14 @@ Operators who want to maximize their profit!">
                 
                 <div class="field first-name">
                   <label class="caption">
-                    <input class="field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30" data-title="First" aria-required="true">
                     <span class="caption-text">First Name</span>
+                    <input class="field-element field-control" name="first_name" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30" data-title="First" aria-required="true">
                   </label>
                 </div>
                 <div class="field last-name">
                   <label class="caption">
-                    <input class="field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30" data-title="Last" aria-required="true">
                     <span class="caption-text">Last Name</span>
+                    <input class="field-element field-control" name="last_name" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30" data-title="Last" aria-required="true">
                   </label>
                 </div>
               </fieldset>
@@ -4409,9 +4400,18 @@ Operators who want to maximize their profit!">
                 <span class="required" aria-hidden="true">*</span>
               
             </label>
-          
                 
                 <textarea class="field-element " style="border-radius: 23.84px;"id="textarea-yui_3_17_2_1_1679348080814_63351-field" aria-required="true"></textarea>
+                <input type="hidden" id="hiddenInput" name="message"  />
+            <script>
+              const source = document.getElementById('textarea-yui_3_17_2_1_1679348080814_63351-field');
+              const mirror = document.getElementById('hiddenInput');
+            
+              source.addEventListener('input', () => {
+                mirror.value = source.value;
+              });
+            </script>
+
               </div>
             
 
